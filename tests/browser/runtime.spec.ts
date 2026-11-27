@@ -18,7 +18,7 @@ test('Monaco drives real React, a second module and recovery', async ({ page }) 
   await expect(preview.getByRole('heading', { name: 'Edited in Monaco' })).toBeVisible()
   console.log(`heading update including editor input: ${Math.round(performance.now() - editStart)} ms`)
 
-  await page.getByRole('button', { name: '/src/caption.ts', exact: true }).click()
+  await page.getByRole('complementary', { name: 'Explorer' }).getByRole('button', { name: 'caption.ts', exact: true }).click()
   await writeEditor(page, "export const caption = 'Updated second module'")
   await expect(preview.getByText('Updated second module')).toBeVisible()
 

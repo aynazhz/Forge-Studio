@@ -25,6 +25,10 @@ monaco.languages.typescript.typescriptDefaults.setCompilerOptions(compilerOption
 monaco.languages.typescript.javascriptDefaults.setCompilerOptions({ ...compilerOptions, allowJs: true })
 monaco.languages.typescript.typescriptDefaults.setEagerModelSync(true)
 
+// The sandbox resolves npm modules separately from Monaco's virtual files.
+monaco.languages.typescript.typescriptDefaults.setDiagnosticsOptions({ noSemanticValidation: true })
+monaco.languages.typescript.javascriptDefaults.setDiagnosticsOptions({ noSemanticValidation: true })
+
 monaco.editor.defineTheme('forge', {
   base: 'vs-dark',
   inherit: true,
