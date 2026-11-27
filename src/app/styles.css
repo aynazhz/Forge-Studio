@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #14191b; color: #dce5e2; font: 14px system-ui, sans-serif; }
+button { font: inherit; }
+.experiment { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: 20px; }
+.experiment > section { min-width: 0; }
+.editor { height: 70vh; }
+.preview-frame { width: 100%; height: 70vh; border: 0; background: #f1f4ec; }
+.preview-error { color: #ffb2a8; white-space: pre-wrap; overflow-wrap: anywhere; }
