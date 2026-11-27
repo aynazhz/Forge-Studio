@@ -30,3 +30,9 @@
 - ⁧بررسی نحوی و تکمیل محلی Monaco آزموده شد. بررسی معنایی وابستگی‌های npm در editor و بازنویسی خودکار import پس از rename یا move در این نسخه وجود ندارند. Undo در همان مدل نگه داشته می‌شود و با تغییر URI، خروج از پروژه یا reload تاریخچه از آن مدل جدا می‌شود.⁩
 - ⁧IndexedDB به origin و پروفایل مرورگر وابسته است. کار هم‌زمان دو تب ادغام نمی‌شود. اگر ذخیره تعارض داشته باشد، کار در تب قدیمی تا هنگام بسته‌شدن صفحه در حافظه باقی می‌ماند.⁩
 - ⁧آزمون رابط به Chromium محدود بود. Firefox و Safari و اجرای آفلاین bundler بررسی نشده‌اند. عملکرد پروژه‌های بزرگ نیز اندازه‌گیری نشده است.⁩
+
+## ⁧بررسی GitHub Actions و تکرار روی Windows⁩
+
+⁧در GitHub Actions، workflow مربوط به PR روی Ubuntu پایان یافت و نصب، بررسی نوع، lint، ۷ آزمون واحد، build و ۵ آزمون مرورگر با Chromium پیش‌فرض Playwright موفق شدند. [اجرای Checks در GitHub](https://github.com/aynazhz/Forge-Studio/actions/runs/46009421264)⁩
+
+⁧در یک تکرار بعدی روی Windows با Chromium پیش‌فرض Playwright، ۳ آزمون موفق شدند و ۲ سناریوی وابسته به خروجی Preview در عنوان اولیه متوقف شدند. در هر دو trace، درخواست دامنهٔ Sandpack با `net::ERR_CONNECTION_CLOSED` ثبت شد و رابط پیام پایان مهلت Preview را نشان داد. این تکرار برای دو سناریوی runtime وضعیت `blocked` دارد. اجرای قبلی Windows با Chrome و اجرای Ubuntu هر پنج سناریو را کامل کردند.⁩

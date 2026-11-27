@@ -13,6 +13,8 @@
 
 ⁧برای رفع ناسازگاری نسخهٔ Node پیش‌فرض از Node 22 استفاده شد. Sandbox خارجی برای اثبات اجرا سریع‌تر به نتیجه رسید و به صورت adapter کوچک به هسته وصل شد. خطای ذخیره و اختلاف revision قابل مشاهده است. بررسی معنایی Monaco به علت جدا بودن حل وابستگی‌ها در Sandpack غیرفعال است. هشدار حجم خروجی Vite باقی است و build موفق است.⁩
 
+⁧GitHub Actions روی Ubuntu همهٔ بررسی‌ها را پاس کرد. در یک اجرای بعدی Windows، دو سناریوی شبکه‌ای در اتصال Sandpack متوقف شدند و سه سناریوی دیگر پاس شدند. شواهد هر دو اجرا در سند مرحلهٔ ۲ ثبت شده‌اند.⁩ [اجرای موفق CI](https://github.com/aynazhz/Forge-Studio/actions/runs/46009421264)
+
 ## ⁧قدم بعدی دقیق⁩
 
 ⁧دانشجو در `src/features/workspace/PreviewPane.tsx` از `new SandpackRuntime` شروع کند. قرارداد `sandboxSetup` را کنار تست واقعی runtime بخواند و آزمایش Chromium مستقلی برای اجرای React/Vite، شروع، خروجی، خطا و توقف در runtime کاندید بسازد. نتیجه همراه شرایط مرورگر، شبکه و مجوز پیش از هر تغییر در Workspace برای بازبینی ارائه شود.⁩ [مسیر آموزش](LEARNING_PLAN.md#stage-3-start)
