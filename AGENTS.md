@@ -15,3 +15,7 @@ README، docs/PROJECT_CONTEXT.md، docs/PROGRESS.md، docs/ROADMAP.md و درس 
 
 ## دامنه
 شرح محصول و مسیر توسعه در docs/PROJECT_CONTEXT.md؛ دستور اجرایی مرحله ۱ و ۲ در docs/STAGE_1_2_TASK.md. هر قابلیت باید واقعی و قابل راستی‌آزمایی باشد. محیط نمایشی را اجرای واقعی معرفی نکن.
+
+## ⁧ادامه از مرحلهٔ ۳⁩
+
+⁧وضعیت واقعی، مدرک آزمون و شناسهٔ نسخهٔ مبنا در [PROGRESS.md](docs/PROGRESS.md) هستند. برای جلسهٔ اول [گام نخست مرحلهٔ ۳](docs/LEARNING_PLAN.md#stage-3-start) را دنبال کن. پیش از تغییر Workspace، دانشجو بررسی runtime را به‌صورت آزمایش مستقل انجام می‌دهد و تصمیم را برای بازبینی می‌آورد.⁩
